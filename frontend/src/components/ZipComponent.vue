@@ -168,9 +168,9 @@ export default {
             data.forEach(r => {
                 console.log(r.name, parent);
                 if (r.name == parent) {
-                    crumbs.push(r.name);
                     parent = r.parent;
                     crumbs = this.getParents(this.data, parent, crumbs);
+                    crumbs.push(r.name);
                 } else {
                     crumbs = this.getParents(r.children, parent, crumbs);
                 }
