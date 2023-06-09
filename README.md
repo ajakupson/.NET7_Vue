@@ -9,7 +9,7 @@ Easiest way to run:
  docker compose up
  ```
  It will create container and images for backend, frontend.
- - 3. In browser type ``` http://localhost:7115/health ``` for healthcheck.
+ - 3. In browser type ``` http://localhost:7115/api/zip/health ``` for healthcheck.
  - 4. In browser type ``` http://localhost:5175 ```. It will open Vue app.
 
 ### Example of Dependency Injection:
