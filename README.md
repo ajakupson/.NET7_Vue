@@ -62,3 +62,126 @@ ZipController.cs
   ```
  
  ## Project structure:
+ ```
+  \---.NET7_Vue-main
+    |   app.png
+    |   docker-compose.yml
+    |   README.md
+    |   TestTaskDescription.docx
+    |   
+    +---API_Tests
+    |   |   API_Tests.csproj
+    |   |   Usings.cs
+    |   |   ZipControllerTest.cs
+    |   |                
+    |   +---Properties
+    |          Resources.Designer.cs
+    |          Resources.resx
+    |                         
+    +---backend
+    |   |   .dockerignore
+    |   |   .gitignore
+    |   |   appsettings.Development.json
+    |   |   appsettings.json
+    |   |   backend.csproj
+    |   |   Dockerfile
+    |   |   Program.cs
+    |   |   
+    |   +---Constants
+    |   |       EM.cs
+    |   |       
+    |   +---Controllers
+    |   |       ZipController.cs
+    |   |       
+    |   +---IServices
+    |   |       ICultureService.cs
+    |   |       IZipService.cs
+    |   |       
+    |   +---Models
+    |   |       Node.cs
+    |   |       ZipEntry.cs
+    |   |       
+    |   +---Properties
+    |   |       launchSettings.json
+    |   |       
+    |   +---Services
+    |   |       CultureService.cs
+    |   |       ZipService.cs
+    |   |       
+    |   \---zips
+    |       |   CatGame - Copy.zip
+    |       |   CatGame - Copy2.zip
+    |       |   CatGame.zip
+    |       |   CatGame2.zip
+    |       |   
+    |       \---CatGame
+    |           +---dlls
+    |           |       CatGame.dll
+    |           |       
+    |           +---images
+    |           |       0.png
+    |           |       1.png
+    |           |       2.png
+    |           |       3.png
+    |           |       
+    |           \---languages
+    |                   CatGame.xml
+    |                   CatGame_en.xml
+    |                   
+    \---frontend
+        |   .dockerignore
+        |   .eslintrc.cjs
+        |   .gitignore
+        |   .prettierrc.json
+        |   cypress.config.ts
+        |   Dockerfile
+        |   env.d.ts
+        |   index.html
+        |   package-lock.json
+        |   package.json
+        |   README.md
+        |   tsconfig.app.json
+        |   tsconfig.json
+        |   tsconfig.node.json
+        |   tsconfig.vitest.json
+        |   vite.config.ts
+        |   vitest.config.ts
+        |   
+        +---.vscode
+        |       extensions.json
+        |       
+        +---cypress
+        |   +---e2e
+        |   |       example.cy.ts
+        |   |       tsconfig.json
+        |   |       
+        |   +---fixtures
+        |   |       example.json
+        |   |       
+        |   \---support
+        |           commands.ts
+        |           e2e.ts
+        |           
+        +---public
+        |       favicon.ico
+        |       
+        \---src
+            |   App.vue
+            |   main.js
+            |   
+            +---assets
+            |       base.css
+            |       logo.svg
+            |       main.css
+            |       
+            +---components
+            |       Node.vue
+            |       ZipComponent.vue
+            |       
+            +---router
+            |       index.ts
+            |       
+            \---stores
+                    counter.ts
+                    
+```
