@@ -1,4 +1,4 @@
-# Demo of analytics dashboard with Node.js, Express, TypeScript, MongoDB, Vue, Vue-ChartJs, Docker
+# .NET7, Vue, Bootstrap, Toastr Demo
 
 ![app](app.png)
 
