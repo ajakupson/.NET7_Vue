@@ -1,8 +1,6 @@
 ﻿using backend.IServices;
 using backend.Models;
-using backend.Services;
 using Microsoft.AspNetCore.Mvc;
-using System.IO.Compression;
 
 namespace backend.Controllers
 {
@@ -18,6 +16,13 @@ namespace backend.Controllers
         }
 
         [HttpGet]
+        [Route("health")]
+        public IActionResult HealthCheck()
+        {
+            return Ok("API is working!");
+        }
+
+        [HttpGet]
         [Route("get")]
         public IActionResult GetZipArchives()
         {
@@ -28,8 +33,7 @@ namespace backend.Controllers
             }
             catch (DirectoryNotFoundException ex)
             {
-                string path = Path.GetFullPath("zips");
-                return NotFound(path);
+                return NotFound(ex.Message);
             }
         }
 

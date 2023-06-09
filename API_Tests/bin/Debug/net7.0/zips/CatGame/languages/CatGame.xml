@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<web>
-  <page id="1845" strValue="1845">
-    <string id="0" strValue="Home" />
-    <string id="1" strValue="Away" />
-    <string id="2" strValue="Draw" />
-  </page>
-</web>
