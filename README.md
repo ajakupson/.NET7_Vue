@@ -60,6 +60,15 @@ ZipController.cs
       return NotFound(ex.Message);
   }
   ```
+  
+  ### Swagger support
+  ```
+  if (app.Environment.IsDevelopment())
+  {
+    app.UseSwagger();
+    app.UseSwaggerUI();
+  }
+  ```
  
  ## Project structure:
  ```
