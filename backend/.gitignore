@@ -1,0 +1,10 @@
+﻿bin
+node_modules
+obj
+*.user
+*.sln
+.vs
+wwwroot/photos/thumbnails/*
+wwwroot/photos/original/*
+!wwwroot/photos/thumbnails/.placeholder
+!wwwroot/photos/original/.placeholder

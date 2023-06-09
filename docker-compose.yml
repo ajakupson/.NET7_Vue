@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  # API Services
+  api:
+    build: ./backend/
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 7115:80
+      - 5254:443
+  # Web
+  web:
+    build: ./frontend/
+    ports:
+      - 5175:4001
+    depends_on:
+      - api 
+
