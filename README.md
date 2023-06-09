@@ -62,6 +62,7 @@ ZipController.cs
   ```
   
   ### Swagger support
+  Program.cs
   ```
   if (app.Environment.IsDevelopment())
   {
